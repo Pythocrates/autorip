@@ -1,0 +1,2 @@
+SUBSYSTEM=="block", KERNEL=="sr0", ACTION=="change", ENV{ID_CDROM_MEDIA_TRACK_COUNT_AUDIO}!="", ENV{ID_CDROM_MEDIA_TRACK_COUNT_AUDIO}!="0", RUN+="/bin/su - root /root/rip_cd.sh &> /dev/null &"
+
